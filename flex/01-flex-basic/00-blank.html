@@ -7,31 +7,119 @@
 	<title>CSS Flex</title>
 	<link rel="stylesheet" href="default.css">
 	<style>
-		.flex-container {
+		.page {
 			display: flex;
-			height: 300px;
-
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: flex-start;
-			align-items: stretch;
-			align-content: stretch;
+			flex-direction: column;
+			min-height: 100vh;
 		}
 
-		.flex-item:nth-child(1) {
-			flex-grow: 1;
+		.header {
+			border: 1px solid black;
+			background-color: grey;
+			flex: 0 0 auto;
 		}
 
-		.flex-item:nth-child(2) {
-			flex-grow: 2;
+		.section {
+			border: 1px solid blue;
+			flex: 1 1 auto;
+		}
+
+		.footer {
+			border: 1px solid yellow;
+			background-color: aqua;
+			flex: 0 0 auto;
 		}
 	</style>
 </head>
 <body>
-	<div class="flex-container">
-		<div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
-		<div class="flex-item">BB</div>
-		<div class="flex-item">CCCCCCCCC</div>
+	<div class="page">
+		<div class="header">
+			header here
+		</div>
+		<section class="section">
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque debitis dolorem doloremque
+				earum eos facere fugiat mollitia neque nihil, officia omnis pariatur, perferendis possimus quam quia quo
+				veritatis vitae.
+			</div>
+			<div>Dolorum, illo repellat! Eius harum magni pariatur porro provident! A ab, corporis deleniti pariatur
+				recusandae temporibus. Aliquid amet asperiores aut iusto nesciunt praesentium quod vero. Eius molestiae
+				tempore velit vero.
+			</div>
+			<div>Aliquam animi aspernatur cum doloribus ducimus et exercitationem itaque iusto magnam maiores nihil
+				possimus quaerat, reprehenderit sed, sunt suscipit vero! Blanditiis eos incidunt, ipsa maxime nulla
+				quaerat quos ratione repudiandae!
+			</div>
+			<div>Aliquid distinctio illo voluptates. Aut dolor eos optio possimus recusandae reprehenderit repudiandae
+				sunt unde ut! Amet animi autem beatae, dicta ea est facilis id iusto laudantium similique temporibus
+				voluptas voluptatum?
+			</div>
+			<div>Doloribus officiis quaerat quidem sed. Accusamus accusantium cumque delectus dolores ea, eligendi fugit
+				non nostrum officia omnis possimus sapiente suscipit voluptatibus. Earum illo laudantium minima
+				molestias nemo porro qui soluta.
+			</div>
+			<div>Accusamus consequuntur deserunt dolorem dolores ea earum enim est facere fuga fugit illum, labore
+				laborum magni minus molestiae mollitia nulla officia placeat quas quibusdam reprehenderit rerum vel
+				voluptas! Eos, quod.
+			</div>
+			<div>Ad earum et facere facilis illum laudantium minima nisi quia veritatis? Accusantium, aliquam at aut
+				culpa dicta dignissimos eveniet in modi, nesciunt odio odit possimus quia voluptates. Beatae, mollitia,
+				quisquam?
+			</div>
+			<div>Adipisci, rerum, tempore. Consequatur id modi, molestiae possimus quaerat reiciendis reprehenderit
+				sequi tenetur! Aliquid dolore earum eligendi error expedita facilis illo illum laboriosam obcaecati
+				pariatur perferendis provident quidem, repudiandae sint!
+			</div>
+			<div>Accusantium aperiam architecto blanditiis, cupiditate dignissimos, distinctio dolores harum obcaecati
+				odio quas quia quo sunt. Adipisci, assumenda doloremque facilis impedit iste iure iusto maxime molestiae
+				nemo nulla odit rem, repellat.
+			</div>
+			<div>Ad dicta ea minus nobis porro tempore vitae. Alias aliquid assumenda atque aut consequatur consequuntur
+				deleniti, id minus non perspiciatis! Animi deleniti ea eos est iste odio officiis possimus voluptatibus!
+			</div>
+			<div>Architecto commodi dolores ex fugiat laborum nam porro, quam quos reiciendis similique temporibus, unde
+				voluptates. Ab necessitatibus nulla quo. Ducimus ea fuga fugiat molestiae, nobis officiis tempore ut
+				voluptate voluptatibus?
+			</div>
+			<div>Ad esse itaque nam officiis perferendis, suscipit veritatis voluptas. Ad animi blanditiis consectetur
+				corporis, debitis error, ex facere fuga incidunt magnam neque nisi possimus quis quo reiciendis
+				similique ullam? Incidunt.
+			</div>
+			<div>Adipisci autem consequatur cupiditate delectus dolor ea eius excepturi expedita fugit in ipsam
+				laudantium magni nemo nihil officia possimus quod ratione saepe similique suscipit, tempora tempore,
+				unde ut veritatis voluptatibus.
+			</div>
+			<div>A accusamus adipisci animi aut commodi cumque deserunt dolorem, dolorum facilis fugiat inventore libero
+				nobis nulla perspiciatis qui quia quibusdam sit? Ad aliquid culpa, ex excepturi maxime modi odio
+				recusandae!
+			</div>
+			<div>Ab impedit minima odit sint vel. Architecto commodi consectetur corporis est hic omnis perspiciatis
+				quia quidem repellendus voluptatum! Accusantium aliquid architecto aspernatur, consectetur expedita
+				fugit minus nobis officiis rem rerum.
+			</div>
+			<div>Ipsum minima quaerat tempora? A alias animi beatae, cumque cupiditate dignissimos dolor eos facere,
+				illum iste minima mollitia natus officiis omnis perspiciatis praesentium quod rem, sapiente sunt veniam
+				voluptatem voluptates?
+			</div>
+			<div>Adipisci ex ipsa quod suscipit temporibus! Aliquid aspernatur beatae cumque earum eligendi est facere
+				hic inventore minus nisi quia repellendus tenetur velit veniam, voluptatum. Corporis cupiditate
+				doloremque facilis nemo voluptatibus.
+			</div>
+			<div>Aliquam assumenda corporis cum dolor dolorum est fuga fugit illum ipsum iste itaque iure libero maxime
+				neque non odio optio porro quibusdam rem repudiandae sapiente tempora tenetur velit, veritatis
+				voluptate?
+			</div>
+			<div>Architecto ducimus eius id impedit ipsa, laboriosam libero nesciunt nobis pariatur quas unde vel vitae.
+				A accusamus aspernatur, assumenda ducimus fuga obcaecati officiis perspiciatis quae quis, quo quos rem
+				voluptatem!
+			</div>
+			<div>Dolorem hic laboriosam voluptas. Adipisci consequatur dolorem enim, expedita numquam possimus sapiente.
+				Animi debitis deleniti illo quia ullam. Ad cupiditate debitis ea eligendi in itaque nisi, recusandae rem
+				soluta tenetur.
+			</div>
+		</section>
+		<footer class="footer">
+			footer here
+		</footer>
 	</div>
 </body>
 </html>
